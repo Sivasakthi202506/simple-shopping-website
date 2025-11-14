@@ -22,7 +22,7 @@ describe("testing the single product page", () => {
 
   it("buy now works perfectly", () => {
     cy.wait("@product").then(() => {
-      cy.get('[data-test="login-btn"]').click();
+      // cy.get('[data-test="login-btn"]').click();
       cy.get('[data-test="input-username"]').type("atuny0");
       cy.get('[data-test="input-password"]').type("9uQFF1Lh");
       cy.get('[data-test="input-submit"]').click();
@@ -34,7 +34,7 @@ describe("testing the single product page", () => {
 
   it.only("add to wishlist works perfectly", () => {
     cy.wait("@product").then(() => {
-      cy.get('[data-test="login-btn"]').click();
+      // cy.get('[data-test="login-btn"]').click();
       cy.get('[data-test="input-username"]').type("atuny0");
       cy.get('[data-test="input-password"]').type("9uQFF1Lh");
       cy.get('[data-test="input-submit"]').click();

@@ -33,7 +33,7 @@ const Navbar: FC = () => {
             className="text-4xl font-bold dark:text-white"
             data-test="main-logo"
           >
-            Shopify
+            Shopeee
           </Link>
           <div className="lg:flex hidden w-center max-w-[500px] border-1 border-blue-500 rounded overflow-hidden">
             <input
@@ -54,7 +54,8 @@ const Navbar: FC = () => {
               Products
             </Link>
             <Link
-              to="/categories"
+              // to="/categories"
+              to="#"
               className="text-xl font-bold"
               data-test="main-categories"
             >
@@ -77,7 +78,7 @@ const Navbar: FC = () => {
                   <span
                     className="cursor-pointer hover:opacity-85 dark:text-white"
                     onClick={() => dispatch(updateModal(true))}
-                    data-test="login-btn"
+                    // data-test="login-btn"
                   >
                     Login
                   </span>
@@ -97,7 +98,7 @@ const Navbar: FC = () => {
                 {cartCount}
               </div>
             </div>
-            <div
+            {/* <div
               onClick={() => {
                 dispatch(updateDarkMode(!isDarkMode));
                 document.body.classList.toggle("dark");
@@ -108,7 +109,7 @@ const Navbar: FC = () => {
               ) : (
                 <MdOutlineDarkMode className="cursor-pointer" size={30} />
               )}
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
