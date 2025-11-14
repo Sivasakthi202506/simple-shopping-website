@@ -8,8 +8,8 @@ import { Link } from "react-router-dom";
 import useAuth from "../hooks/useAuth";
 import { FaUser } from "react-icons/fa";
 import CustomPopup from "./CustomPopup";
-import { updateDarkMode } from "../redux/features/homeSlice";
-import { MdOutlineDarkMode, MdOutlineLightMode } from "react-icons/md";
+// import { updateDarkMode } from "../redux/features/homeSlice";
+// import { MdOutlineDarkMode, MdOutlineLightMode } from "react-icons/md";
 
 const Navbar: FC = () => {
   const dispatch = useAppDispatch();
@@ -17,7 +17,7 @@ const Navbar: FC = () => {
     (state) => state.cartReducer.cartItems.length
   );
   const username = useAppSelector((state) => state.authReducer.username);
-  const isDarkMode = useAppSelector((state) => state.homeReducer.isDarkMode);
+  // const isDarkMode = useAppSelector((state) => state.homeReducer.isDarkMode);
   const { requireAuth } = useAuth();
 
   const showCart = () => {

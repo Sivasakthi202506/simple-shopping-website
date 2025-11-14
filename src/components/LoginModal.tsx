@@ -1,22 +1,22 @@
-import { FC, FormEvent, useState } from "react";
-import { useAppSelector, useAppDispatch } from "../redux/hooks";
-import { doLogin, updateModal } from "../redux/features/authSlice";
-import { FaUnlock } from "react-icons/fa";
-import { RiLockPasswordFill, RiUser3Fill } from "react-icons/ri";
-import { GiArchiveRegister } from "react-icons/gi";
-import { RxCross1 } from "react-icons/rx";
+import { FC} from "react";
+import { useAppSelector } from "../redux/hooks";
+// import { doLogin, updateModal } from "../redux/features/authSlice";
+// import { FaUnlock } from "react-icons/fa";
+// import { RiLockPasswordFill, RiUser3Fill } from "react-icons/ri";
+// import { GiArchiveRegister } from "react-icons/gi";
+// import { RxCross1 } from "react-icons/rx";
 
 const LoginModal: FC = () => {
-  const [clicked, setClicked] = useState(false);
-  const [username, setUsername] = useState("");
-  const [password, setPassword] = useState("");
-  const dispatch = useAppDispatch();
+  // const [clicked, setClicked] = useState(false);
+  // const [username, setUsername] = useState("");
+  // const [password, setPassword] = useState("");
+  // const dispatch = useAppDispatch();
   const open = useAppSelector((state) => state.authReducer.modalOpen);
 
-  const submitForm = (e: FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    dispatch(doLogin({ username, password }));
-  };
+  // const submitForm = (e: FormEvent<HTMLFormElement>) => {
+  //   e.preventDefault();
+  //   dispatch(doLogin({ username, password }));
+  // };
 
   if (open) {
     return (
